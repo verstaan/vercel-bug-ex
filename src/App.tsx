@@ -1,9 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { default as MaterialTable } from "material-table";
+
+import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
+
+const geocoder = new MapboxGeocoder({
+    accessToken: "MapboxAPIKey",
+    marker: false,
+});
 
 function App() {
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,7 +29,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <MaterialTable columns={[]} data={[]}/>
     </div>
   );
 }

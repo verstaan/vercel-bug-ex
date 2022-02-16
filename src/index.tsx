@@ -3,11 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { default as MaterialTable,
-    MaterialTableProps,
-    Query,
-    QueryResult,
-    Filter } from "material-table";
 
 ReactDOM.render(
   <React.StrictMode>
